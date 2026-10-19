@@ -1,6 +1,6 @@
 {
   "active": true,
-  "hostname": "judol-15",
+  "hostname": "judol-16",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
@@ -13,99 +13,30 @@
   "rdp_user": "judolnoh",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-18T20:57:40Z",
-  "expires_at": "2026-10-19T02:39:40Z",
+  "started_at": "2026-10-19T02:38:09Z",
+  "expires_at": "2026-10-19T08:20:09Z",
   "duration_menit": 342,
-  "run_id": "39165642951",
+  "run_id": "39190869003",
   "run_attempt": "1",
-  "run_number": "15",
-  "run_url": "https://github.com/reyajaaw/rdp/actions/runs/39165642951",
+  "run_number": "16",
+  "run_url": "https://github.com/reyajaaw/rdp/actions/runs/39190869003",
   "mode": "bersih+win10",
   "akses": {
-    "tailscale": {
-      "status": "ok",
-      "hostname": "judol-15",
-      "ip": "100.109.82.73",
-      "magicdns": "judol-15.taila5a0e8.ts.net.",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
-    },
     "tunnel": {
-      "outside": "tailscale",
-      "address": "100.109.82.73:3389",
-      "selftest": "ok",
       "host": "100.109.82.73",
+      "selftest": "ok",
+      "outside": "tailscale",
       "status": "ok",
+      "address": "100.109.82.73:3389",
       "port": 3389
     },
-    "mode": "tailscale"
-  },
-  "win10": {
-    "look": "ok",
-    "badge": "ok",
-    "wallpaper": "ok",
-    "search": "ok",
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
-  },
-  "media": {
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "microphone": "rdp_capture_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "audio_output": "rdp_playback_enabled"
-  },
-  "xydesk": {
-    "host": "ok",
-    "denyts": "ok",
-    "multisession": "ok",
-    "avc444": "ok (120FPS DWMFRAMEINTERVAL=8 + TCPNoDelay=1)",
-    "fontsmoothing": "ok (ClearType profil Default)",
-    "audio_out": "ok (policy fDisableAudio=0, WinStations=0)",
-    "audio_mic": "ok (policy fDisableAudioCapture=0, WinStations=0) - mic HP redirect aktif, Allow di HP",
-    "wallpaper_rdp": "ok (policy fNoRemoteDesktopWallpaper=0) - wallpaper RDP tampil, cek client Experience→Wallpaper ON",
-    "firewall": "tcp3389=True udp3389=True udp4433=True",
-    "services": "ok",
-    "rdp_ready": "127.0.0.1 (handshake OK)",
-    "rdp_probe": "awal=True multi=True audio=True grafis=True clear=True fw=True svc=True",
-    "quic_udp4433": "dibuka di VM (tidak lewat tunnel TCP)",
-    "akses": "(menyusul)",
-    "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
-  },
-  "grafis": {
-    "mode": "mesa-d3d12-opengl46",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64"
-  },
-  "samp": {
-    "vc2013_x86": true,
-    "vc2015_x86": true,
-    "compat2026": true,
-    "netfx48": true,
-    "vc2013_x64": true,
-    "vc2015_x64": true,
-    "directx9": true,
-    "directplay": true,
-    "silentpatch": true,
-    "webview2": true,
-    "status": "runtimes-2026-ready"
-  },
-  "games": {
-    "minecraft_java_runtime": {
-      "java21": true,
-      "prismlauncher": true,
-      "java8": true,
-      "opengl46": true
-    },
-    "minecraft_java": "installed-with-opengl46"
-  },
-  "extras": {
-    "lightshot": "ok",
-    "wallpaper": "ok",
-    "wallpaper_file": "wallpaper.jpg",
-    "vscode": "skip",
-    "notepadpp": "skip",
-    "admin": true
-  },
-  "storage": {
-    "note": "dilewati sesuai config",
-    "boost": "skip"
+    "mode": "tailscale",
+    "tailscale": {
+      "status": "ok",
+      "ip": "100.109.82.73",
+      "magicdns": "judol-15.taila5a0e8.ts.net.",
+      "hostname": "judol-16",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
+    }
   }
 }
